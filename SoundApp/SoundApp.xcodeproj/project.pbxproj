@@ -15,6 +15,7 @@
 		44D9DD0A2602EC710058FEC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD082602EC710058FEC9 /* LaunchScreen.storyboard */; };
 		44D9DD152602EC710058FEC9 /* SoundAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D9DD142602EC710058FEC9 /* SoundAppTests.swift */; };
 		44D9DD202602EC710058FEC9 /* SoundAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D9DD1F2602EC710058FEC9 /* SoundAppUITests.swift */; };
+		44D9DD2E2602F64E0058FEC9 /* notes in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD2D2602F64E0058FEC9 /* notes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		44D9DD1B2602EC710058FEC9 /* SoundAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D9DD1F2602EC710058FEC9 /* SoundAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundAppUITests.swift; sourceTree = "<group>"; };
 		44D9DD212602EC710058FEC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D9DD2D2602F64E0058FEC9 /* notes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				44D9DD012602EC700058FEC9 /* ViewController.swift */,
 				44D9DD032602EC700058FEC9 /* Main.storyboard */,
 				44D9DD062602EC710058FEC9 /* Assets.xcassets */,
+				44D9DD2D2602F64E0058FEC9 /* notes */,
 				44D9DD082602EC710058FEC9 /* LaunchScreen.storyboard */,
 				44D9DD0B2602EC710058FEC9 /* Info.plist */,
 			);
@@ -234,6 +237,7 @@
 			files = (
 				44D9DD0A2602EC710058FEC9 /* LaunchScreen.storyboard in Resources */,
 				44D9DD072602EC710058FEC9 /* Assets.xcassets in Resources */,
+				44D9DD2E2602F64E0058FEC9 /* notes in Resources */,
 				44D9DD052602EC700058FEC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
