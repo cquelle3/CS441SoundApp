@@ -16,6 +16,14 @@
 		44D9DD152602EC710058FEC9 /* SoundAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D9DD142602EC710058FEC9 /* SoundAppTests.swift */; };
 		44D9DD202602EC710058FEC9 /* SoundAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D9DD1F2602EC710058FEC9 /* SoundAppUITests.swift */; };
 		44D9DD32260300580058FEC9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D9DD31260300580058FEC9 /* AVFoundation.framework */; };
+		44D9DD412603020A0058FEC9 /* a4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD39260301DE0058FEC9 /* a4.mp3 */; };
+		44D9DD422603020A0058FEC9 /* b4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD3A260301E40058FEC9 /* b4.mp3 */; };
+		44D9DD432603020A0058FEC9 /* c3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD3B260301E80058FEC9 /* c3.mp3 */; };
+		44D9DD442603020A0058FEC9 /* c4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD3C260301ED0058FEC9 /* c4.mp3 */; };
+		44D9DD452603020A0058FEC9 /* d3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD3D260301F00058FEC9 /* d3.mp3 */; };
+		44D9DD462603020A0058FEC9 /* e3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD3E260301F20058FEC9 /* e3.mp3 */; };
+		44D9DD472603020A0058FEC9 /* f3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD3F260301F40058FEC9 /* f3.mp3 */; };
+		44D9DD482603020A0058FEC9 /* g3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD40260301F80058FEC9 /* g3.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +59,14 @@
 		44D9DD1F2602EC710058FEC9 /* SoundAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundAppUITests.swift; sourceTree = "<group>"; };
 		44D9DD212602EC710058FEC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44D9DD31260300580058FEC9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		44D9DD37260300D80058FEC9 /* notes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = notes; path = /Users/colinquelle/CS441/CS441SoundApp/SoundApp/SoundApp/notes; sourceTree = "<absolute>"; };
+		44D9DD39260301DE0058FEC9 /* a4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a4.mp3; sourceTree = "<group>"; };
+		44D9DD3A260301E40058FEC9 /* b4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = b4.mp3; sourceTree = "<group>"; };
+		44D9DD3B260301E80058FEC9 /* c3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c3.mp3; sourceTree = "<group>"; };
+		44D9DD3C260301ED0058FEC9 /* c4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c4.mp3; sourceTree = "<group>"; };
+		44D9DD3D260301F00058FEC9 /* d3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = d3.mp3; sourceTree = "<group>"; };
+		44D9DD3E260301F20058FEC9 /* e3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = e3.mp3; sourceTree = "<group>"; };
+		44D9DD3F260301F40058FEC9 /* f3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = f3.mp3; sourceTree = "<group>"; };
+		44D9DD40260301F80058FEC9 /* g3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = g3.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +119,14 @@
 		44D9DCFC2602EC700058FEC9 /* SoundApp */ = {
 			isa = PBXGroup;
 			children = (
-				44D9DD37260300D80058FEC9 /* notes */,
+				44D9DD39260301DE0058FEC9 /* a4.mp3 */,
+				44D9DD3A260301E40058FEC9 /* b4.mp3 */,
+				44D9DD3B260301E80058FEC9 /* c3.mp3 */,
+				44D9DD3C260301ED0058FEC9 /* c4.mp3 */,
+				44D9DD3D260301F00058FEC9 /* d3.mp3 */,
+				44D9DD3E260301F20058FEC9 /* e3.mp3 */,
+				44D9DD3F260301F40058FEC9 /* f3.mp3 */,
+				44D9DD40260301F80058FEC9 /* g3.mp3 */,
 				44D9DCFD2602EC700058FEC9 /* AppDelegate.swift */,
 				44D9DCFF2602EC700058FEC9 /* SceneDelegate.swift */,
 				44D9DD012602EC700058FEC9 /* ViewController.swift */,
@@ -246,6 +268,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D9DD412603020A0058FEC9 /* a4.mp3 in Resources */,
+				44D9DD422603020A0058FEC9 /* b4.mp3 in Resources */,
+				44D9DD432603020A0058FEC9 /* c3.mp3 in Resources */,
+				44D9DD442603020A0058FEC9 /* c4.mp3 in Resources */,
+				44D9DD452603020A0058FEC9 /* d3.mp3 in Resources */,
+				44D9DD462603020A0058FEC9 /* e3.mp3 in Resources */,
+				44D9DD472603020A0058FEC9 /* f3.mp3 in Resources */,
+				44D9DD482603020A0058FEC9 /* g3.mp3 in Resources */,
 				44D9DD0A2602EC710058FEC9 /* LaunchScreen.storyboard in Resources */,
 				44D9DD072602EC710058FEC9 /* Assets.xcassets in Resources */,
 				44D9DD052602EC700058FEC9 /* Main.storyboard in Resources */,
