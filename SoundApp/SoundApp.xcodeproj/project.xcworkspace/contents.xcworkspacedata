@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../../Desktop/notes">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/colinquelle/CS441/CS441SoundApp/SoundApp/SoundApp/notes">
+   </FileRef>
+   <FileRef
       location = "self:SoundApp.xcodeproj">
    </FileRef>
 </Workspace>

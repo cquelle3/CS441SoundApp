@@ -11,13 +11,19 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    var player = AVAudioPlayer();
+    @IBOutlet var c3button: UIButton!
+    
+    var note: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
     }
 
-
+    @IBAction func c3(_sender: UIButton){
+        print(Bundle.main.path(forResource: "c3", ofType: "mp3")!);
+    }
+    
 }
 

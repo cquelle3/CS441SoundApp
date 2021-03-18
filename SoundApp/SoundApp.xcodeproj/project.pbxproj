@@ -15,7 +15,7 @@
 		44D9DD0A2602EC710058FEC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD082602EC710058FEC9 /* LaunchScreen.storyboard */; };
 		44D9DD152602EC710058FEC9 /* SoundAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D9DD142602EC710058FEC9 /* SoundAppTests.swift */; };
 		44D9DD202602EC710058FEC9 /* SoundAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D9DD1F2602EC710058FEC9 /* SoundAppUITests.swift */; };
-		44D9DD2E2602F64E0058FEC9 /* notes in Resources */ = {isa = PBXBuildFile; fileRef = 44D9DD2D2602F64E0058FEC9 /* notes */; };
+		44D9DD32260300580058FEC9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D9DD31260300580058FEC9 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,8 @@
 		44D9DD1B2602EC710058FEC9 /* SoundAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D9DD1F2602EC710058FEC9 /* SoundAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundAppUITests.swift; sourceTree = "<group>"; };
 		44D9DD212602EC710058FEC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44D9DD2D2602F64E0058FEC9 /* notes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notes; sourceTree = "<group>"; };
+		44D9DD31260300580058FEC9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		44D9DD37260300D80058FEC9 /* notes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = notes; path = /Users/colinquelle/CS441/CS441SoundApp/SoundApp/SoundApp/notes; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D9DD32260300580058FEC9 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,7 @@
 				44D9DD132602EC710058FEC9 /* SoundAppTests */,
 				44D9DD1E2602EC710058FEC9 /* SoundAppUITests */,
 				44D9DCFB2602EC700058FEC9 /* Products */,
+				44D9DD30260300580058FEC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +104,12 @@
 		44D9DCFC2602EC700058FEC9 /* SoundApp */ = {
 			isa = PBXGroup;
 			children = (
+				44D9DD37260300D80058FEC9 /* notes */,
 				44D9DCFD2602EC700058FEC9 /* AppDelegate.swift */,
 				44D9DCFF2602EC700058FEC9 /* SceneDelegate.swift */,
 				44D9DD012602EC700058FEC9 /* ViewController.swift */,
 				44D9DD032602EC700058FEC9 /* Main.storyboard */,
 				44D9DD062602EC710058FEC9 /* Assets.xcassets */,
-				44D9DD2D2602F64E0058FEC9 /* notes */,
 				44D9DD082602EC710058FEC9 /* LaunchScreen.storyboard */,
 				44D9DD0B2602EC710058FEC9 /* Info.plist */,
 			);
@@ -129,6 +132,14 @@
 				44D9DD212602EC710058FEC9 /* Info.plist */,
 			);
 			path = SoundAppUITests;
+			sourceTree = "<group>";
+		};
+		44D9DD30260300580058FEC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D9DD31260300580058FEC9 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +248,6 @@
 			files = (
 				44D9DD0A2602EC710058FEC9 /* LaunchScreen.storyboard in Resources */,
 				44D9DD072602EC710058FEC9 /* Assets.xcassets in Resources */,
-				44D9DD2E2602F64E0058FEC9 /* notes in Resources */,
 				44D9DD052602EC700058FEC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
