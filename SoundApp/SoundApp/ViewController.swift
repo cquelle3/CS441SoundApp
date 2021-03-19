@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet var a4button: UIButton!
     @IBOutlet var b4button: UIButton!
     @IBOutlet var c4button: UIButton!
+    @IBOutlet var c3SharpButton: UIButton!
+    @IBOutlet var d3SharpButton: UIButton!
     var noteName = "c3";
     
     var note: AVAudioPlayer?
@@ -82,6 +84,16 @@ class ViewController: UIViewController {
     
     @IBAction func c4(_sender: UIButton){
         setNote(name: "c4");
+        playNote();
+    }
+    
+    @IBAction func c3Sharp(_sender: UIButton){
+        setNote(name: "c-3");
+        playNote();
+    }
+    
+    @IBAction func d3Sharp(_sender: UIButton){
+        setNote(name: "d-3");
         playNote();
     }
     

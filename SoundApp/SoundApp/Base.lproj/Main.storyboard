@@ -15,68 +15,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pianoKeys.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Lmq-hy-0tZ">
+                                <rect key="frame" x="-8" y="630" width="428" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSG-m3-yKD">
-                                <rect key="frame" x="57" y="169" width="30" height="30"/>
+                                <rect key="frame" x="0.0" y="772" width="45" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="c3"/>
                                 <connections>
+                                    <action selector="c3With_sender:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="LdR-V7-Zf6"/>
+                                    <action selector="c3With_sender:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="WHn-oj-1bI"/>
                                     <action selector="c3With_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wte-Mr-yQQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7N-jH-erM">
-                                <rect key="frame" x="57" y="207" width="30" height="30"/>
+                                <rect key="frame" x="48" y="772" width="51" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="d3"/>
                                 <connections>
+                                    <action selector="d3With_sender:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="3Va-i2-CBb"/>
                                     <action selector="d3With_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qgf-87-XEV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ng-Na-JAI">
-                                <rect key="frame" x="57" y="245" width="30" height="30"/>
+                                <rect key="frame" x="101" y="772" width="51" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="e3"/>
                                 <connections>
+                                    <action selector="e3With_sender:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Z8z-gl-tD0"/>
                                     <action selector="e3With_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baF-kn-qEo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZd-Ex-CDq">
-                                <rect key="frame" x="57" y="283" width="30" height="30"/>
+                                <rect key="frame" x="154" y="772" width="51" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="f3"/>
                                 <connections>
+                                    <action selector="f3With_sender:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="4eF-tk-pp4"/>
                                     <action selector="f3With_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rLk-8J-qRH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLD-Tj-U81">
-                                <rect key="frame" x="57" y="321" width="30" height="30"/>
+                                <rect key="frame" x="207" y="772" width="52" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="g3"/>
                                 <connections>
                                     <action selector="g3With_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiO-33-kNz"/>
+                                    <action selector="g3With_sender:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="mhe-Gg-C6w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prQ-yI-t9t">
-                                <rect key="frame" x="57" y="359" width="30" height="30"/>
+                                <rect key="frame" x="261" y="772" width="50" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="a4"/>
                                 <connections>
+                                    <action selector="a4With_sender:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="XBs-ER-440"/>
                                     <action selector="a4With_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zjv-mQ-wYT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC1-1L-80b">
-                                <rect key="frame" x="57" y="397" width="30" height="30"/>
+                                <rect key="frame" x="314" y="772" width="51" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="b4"/>
                                 <connections>
                                     <action selector="b4With_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Aj-N7-rdI"/>
+                                    <action selector="b4With_sender:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="pwC-uX-cI6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7F-Wd-Jaz">
-                                <rect key="frame" x="57" y="433" width="30" height="30"/>
+                                <rect key="frame" x="367" y="772" width="47" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="c4"/>
                                 <connections>
                                     <action selector="c4With_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMt-BQ-Ask"/>
+                                    <action selector="c4With_sender:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="hLa-w9-QMq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEU-sE-Fzr">
+                                <rect key="frame" x="31" y="630" width="29" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="c#"/>
+                                <connections>
+                                    <action selector="c3SharpWith_sender:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="mg9-pt-8gH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,6 +107,7 @@
                     <connections>
                         <outlet property="a4button" destination="prQ-yI-t9t" id="ck8-Nb-E2h"/>
                         <outlet property="b4button" destination="bC1-1L-80b" id="jPB-ru-Opx"/>
+                        <outlet property="c3SharpButton" destination="HEU-sE-Fzr" id="Re3-Ub-0DS"/>
                         <outlet property="c3button" destination="MSG-m3-yKD" id="F60-aT-D48"/>
                         <outlet property="c4button" destination="t7F-Wd-Jaz" id="Dq9-rA-b0m"/>
                         <outlet property="d3button" destination="k7N-jH-erM" id="qhp-kP-Mmw"/>
@@ -96,7 +118,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="130"/>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pianoKeys.jpg" width="472" height="296"/>
+    </resources>
 </document>
