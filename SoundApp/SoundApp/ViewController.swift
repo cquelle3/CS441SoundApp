@@ -88,12 +88,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func c3Sharp(_sender: UIButton){
-        setNote(name: "c-3");
+        setNote(name: "c3#");
         playNote();
     }
     
     @IBAction func d3Sharp(_sender: UIButton){
-        setNote(name: "d-3");
+        setNote(name: "d3#");
         playNote();
     }
     
