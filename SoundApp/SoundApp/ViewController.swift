@@ -10,7 +10,9 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-
+    
+    var note: AVAudioPlayer?
+    
     @IBOutlet var c3button: UIButton!
     @IBOutlet var d3button: UIButton!
     @IBOutlet var e3button: UIButton!
@@ -19,11 +21,13 @@ class ViewController: UIViewController {
     @IBOutlet var a4button: UIButton!
     @IBOutlet var b4button: UIButton!
     @IBOutlet var c4button: UIButton!
-    @IBOutlet var c3SharpButton: UIButton!
-    @IBOutlet var d3SharpButton: UIButton!
+    @IBOutlet var c3sButton: UIButton!
+    @IBOutlet var d3sButton: UIButton!
+    @IBOutlet var f3sButton: UIButton!
+    @IBOutlet var g3sButton: UIButton!
+    @IBOutlet var a4sButton: UIButton!
+    @IBOutlet var c4sButton: UIButton!
     var noteName = "c3";
-    
-    var note: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +40,7 @@ class ViewController: UIViewController {
     }
     
     func playNote(){
+        
         let path = Bundle.main.path(forResource: noteName, ofType: "mp3")!;
         let url = URL(fileURLWithPath: path);
         do{
@@ -87,13 +92,34 @@ class ViewController: UIViewController {
         playNote();
     }
     
-    @IBAction func c3Sharp(_sender: UIButton){
-        setNote(name: "c3#");
+    @IBAction func c3s(_sender: UIButton){
+        print("c3s");
+        setNote(name: "c3s");
         playNote();
     }
     
-    @IBAction func d3Sharp(_sender: UIButton){
-        setNote(name: "d3#");
+    @IBAction func d3s(_sender: UIButton){
+        setNote(name: "d3s");
+        playNote();
+    }
+    
+    @IBAction func f3s(_sender: UIButton){
+        setNote(name: "f3s");
+        playNote();
+    }
+    
+    @IBAction func g3s(_sender: UIButton){
+        setNote(name: "g3s");
+        playNote();
+    }
+    
+    @IBAction func a4s(_sender: UIButton){
+        setNote(name: "a4s");
+        playNote();
+    }
+    
+    @IBAction func c4s(_sender: UIButton){
+        setNote(name: "c4s");
         playNote();
     }
     
