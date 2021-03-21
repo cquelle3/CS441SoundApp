@@ -146,6 +146,44 @@
                                     <action selector="c4sWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rkC-V0-3s2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="c3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9v-w3-Dya">
+                                <rect key="frame" x="20" y="235" width="374" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCx-T5-Ydp">
+                                <rect key="frame" x="150" y="223" width="115" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihZ-HT-fFr">
+                                <rect key="frame" x="20" y="44" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Jingle Bells"/>
+                                <connections>
+                                    <action selector="jingleBellsButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6f-7x-rwJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nx3-zX-JXA">
+                                <rect key="frame" x="20" y="82" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Happy Birthday"/>
+                                <connections>
+                                    <action selector="happyBirthdayButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pj2-8r-mq2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P09-nf-Jaw">
+                                <rect key="frame" x="331" y="44" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Freestyle"/>
+                                <connections>
+                                    <action selector="freeStyleWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFL-O6-yyR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -163,8 +201,13 @@
                         <outlet property="e3button" destination="3Ng-Na-JAI" id="hi5-YV-jOu"/>
                         <outlet property="f3button" destination="xZd-Ex-CDq" id="pep-Jl-1V9"/>
                         <outlet property="f3sButton" destination="gFz-vM-J87" id="FuC-YS-JwV"/>
+                        <outlet property="freeStyleButton" destination="P09-nf-Jaw" id="a2D-gx-yre"/>
                         <outlet property="g3button" destination="ZLD-Tj-U81" id="T9d-aO-mnF"/>
                         <outlet property="g3sButton" destination="bvt-9d-XuK" id="czE-bS-xRZ"/>
+                        <outlet property="happyBdayButton" destination="Nx3-zX-JXA" id="cPh-06-6X5"/>
+                        <outlet property="jingleBellButton" destination="ihZ-HT-fFr" id="SQn-5z-ou7"/>
+                        <outlet property="noteLabel" destination="Z9v-w3-Dya" id="UUa-4c-Wep"/>
+                        <outlet property="noteNumLabel" destination="jCx-T5-Ydp" id="hm8-Mx-Nbb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
