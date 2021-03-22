@@ -184,6 +184,36 @@
                                     <action selector="freeStyleWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFL-O6-yyR"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ElV-nT-Kc6">
+                                <rect key="frame" x="101" y="42" width="210" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11h-U5-O9h">
+                                <rect key="frame" x="346" y="82" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kit-nZ-0Ud"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qz2-Nn-wUa">
+                                <rect key="frame" x="187" y="82" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ok-Ia-7sr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gta-ez-Y1u">
+                                <rect key="frame" x="333" y="42" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <action selector="goBackWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7g-TC-5fa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -199,15 +229,19 @@
                         <outlet property="d3button" destination="k7N-jH-erM" id="qhp-kP-Mmw"/>
                         <outlet property="d3sButton" destination="12b-MO-EDX" id="aE5-dE-CHe"/>
                         <outlet property="e3button" destination="3Ng-Na-JAI" id="hi5-YV-jOu"/>
+                        <outlet property="enterButton" destination="Qz2-Nn-wUa" id="vcm-K1-3xa"/>
                         <outlet property="f3button" destination="xZd-Ex-CDq" id="pep-Jl-1V9"/>
                         <outlet property="f3sButton" destination="gFz-vM-J87" id="FuC-YS-JwV"/>
                         <outlet property="freeStyleButton" destination="P09-nf-Jaw" id="a2D-gx-yre"/>
                         <outlet property="g3button" destination="ZLD-Tj-U81" id="T9d-aO-mnF"/>
                         <outlet property="g3sButton" destination="bvt-9d-XuK" id="czE-bS-xRZ"/>
+                        <outlet property="goBackButton" destination="gta-ez-Y1u" id="xHw-i1-fYX"/>
                         <outlet property="happyBdayButton" destination="Nx3-zX-JXA" id="cPh-06-6X5"/>
                         <outlet property="jingleBellButton" destination="ihZ-HT-fFr" id="SQn-5z-ou7"/>
                         <outlet property="noteLabel" destination="Z9v-w3-Dya" id="UUa-4c-Wep"/>
                         <outlet property="noteNumLabel" destination="jCx-T5-Ydp" id="hm8-Mx-Nbb"/>
+                        <outlet property="searchBar" destination="ElV-nT-Kc6" id="FrZ-6c-PvS"/>
+                        <outlet property="searchButton" destination="11h-U5-O9h" id="3Nd-Uh-PjS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

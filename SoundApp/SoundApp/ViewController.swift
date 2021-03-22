@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import SafariServices
 
 class ViewController: UIViewController {
     
@@ -31,6 +32,11 @@ class ViewController: UIViewController {
     @IBOutlet var happyBdayButton: UIButton!
     @IBOutlet var jingleBellButton: UIButton!
     @IBOutlet var freeStyleButton: UIButton!
+    @IBOutlet var searchButton: UIButton!
+    @IBOutlet var enterButton: UIButton!
+    @IBOutlet var goBackButton: UIButton!
+    
+    @IBOutlet var searchBar: UITextField!
     
     @IBOutlet var noteLabel: UILabel!
     @IBOutlet var noteNumLabel: UILabel!
@@ -38,7 +44,7 @@ class ViewController: UIViewController {
     var noteName = "c3";
     var notesArr:[String] = ["e3", "e3", "e3", "e3", "e3", "e3", "e3", "g3", "c3", "d3", "e3", "f3", "f3", "f3", "f3", "f3", "e3", "e3", "e3", "e3", "d3", "d3", "e3", "d3", "g3", "e3", "e3", "e3", "e3", "e3", "e3", "e3", "g3", "c3", "d3", "e3", "f3", "f3", "f3", "f3", "f3", "f3", "e3", "e3", "e3", "e3", "g3", "g3", "f3", "d3", "c3", "c3"];
     
-    var happyBday:[String] = ["c3", "c3", "d3", "c3", "f3", "e3", "c3", "c3", "d3", "c3", "g3", "f3", "c3", "c3", "c4", "a4", "f3", "e3", "d3", "a4s", "a4s", "a4", "f3", "g3", "f3"];
+    var happyBday:[String] = ["c3", "c3", "d3", "c3", "f3", "e3", "c3", "c3", "d3", "c3", "g3", "f3", "c3", "c3", "c4", "a4", "f3", "e3", "d3", "a4#", "a4#", "a4", "f3", "g3", "f3"];
     
     var jingleBells:[String] = ["e3", "e3", "e3", "e3", "e3", "e3", "e3", "g3", "c3", "d3", "e3", "f3", "f3", "f3", "f3", "f3", "e3", "e3", "e3", "e3", "d3", "d3", "e3", "d3", "g3", "e3", "e3", "e3", "e3", "e3", "e3", "e3", "g3", "c3", "d3", "e3", "f3", "f3", "f3", "f3", "f3", "f3", "e3", "e3", "e3", "e3", "g3", "g3", "f3", "d3", "c3", "c3"];
     
@@ -51,6 +57,9 @@ class ViewController: UIViewController {
         noteLabel.isHidden = true;
         noteNumLabel.isHidden = true;
         freeStyleCheck = true;
+        searchBar.isHidden = true;
+        enterButton.isHidden = true;
+        goBackButton.isHidden = true;
     }
     
     func setNote(name: String){
@@ -213,7 +222,7 @@ class ViewController: UIViewController {
         setNote(name: "c3s");
         playNote();
         if(freeStyleCheck == false){
-            if(checkNote(s: "c3s") == true){
+            if(checkNote(s: "c3#") == true){
                 nextNote();
             }
             else{
@@ -226,7 +235,7 @@ class ViewController: UIViewController {
         setNote(name: "d3s");
         playNote();
         if(freeStyleCheck == false){
-            if(checkNote(s: "d3s") == true){
+            if(checkNote(s: "d3#") == true){
                 nextNote();
             }
             else{
@@ -239,7 +248,7 @@ class ViewController: UIViewController {
         setNote(name: "f3s");
         playNote();
         if(freeStyleCheck == false){
-            if(checkNote(s: "f3s") == true){
+            if(checkNote(s: "f3#") == true){
                 nextNote();
             }
             else{
@@ -252,7 +261,7 @@ class ViewController: UIViewController {
         setNote(name: "g3s");
         playNote();
         if(freeStyleCheck == false){
-            if(checkNote(s: "g3s") == true){
+            if(checkNote(s: "g3#") == true){
                 nextNote();
             }
             else{
@@ -265,7 +274,7 @@ class ViewController: UIViewController {
         setNote(name: "a4s");
         playNote();
         if(freeStyleCheck == false){
-            if(checkNote(s: "a4s") == true){
+            if(checkNote(s: "a4#") == true){
                 nextNote();
             }
             else{
@@ -278,7 +287,7 @@ class ViewController: UIViewController {
         setNote(name: "c4s");
         playNote();
         if(freeStyleCheck == false){
-            if(checkNote(s: "c4s") == true){
+            if(checkNote(s: "c4#") == true){
                 nextNote();
             }
             else{
@@ -291,6 +300,8 @@ class ViewController: UIViewController {
         noteLabel.isHidden = true;
         noteNumLabel.isHidden = true;
         freeStyleCheck = true;
+        searchBar.isHidden = true;
+        enterButton.isHidden = true;
     }
     
     @IBAction func jingleBellsButton(_sender: UIButton){
@@ -301,6 +312,8 @@ class ViewController: UIViewController {
         noteLabel.isHidden = false;
         noteNumLabel.isHidden = false;
         freeStyleCheck = false;
+        searchBar.isHidden = true;
+        enterButton.isHidden = true;
     }
     
     @IBAction func happyBirthdayButton(_sender: UIButton){
@@ -311,6 +324,45 @@ class ViewController: UIViewController {
         noteLabel.isHidden = false;
         noteNumLabel.isHidden = false;
         freeStyleCheck = false;
+        searchBar.isHidden = true;
+        enterButton.isHidden = true;
+    }
+    
+    @IBAction func search(_sender: UIButton){
+        noteLabel.isHidden = true;
+        noteNumLabel.isHidden = true;
+        happyBdayButton.isHidden = true;
+        jingleBellButton.isHidden = true;
+        searchButton.isHidden = true;
+        freeStyleButton.isHidden = true;
+        freeStyleCheck = true;
+        searchBar.isHidden = false;
+        enterButton.isHidden = false;
+        goBackButton.isHidden = false;
+    }
+    
+    @IBAction func goBack(_sender: UIButton){
+        searchBar.isHidden = true;
+        enterButton.isHidden = true;
+        happyBdayButton.isHidden = false;
+        jingleBellButton.isHidden = false;
+        searchButton.isHidden = false;
+        freeStyleButton.isHidden = false;
+        goBackButton.isHidden = true;
+    }
+    
+    @IBAction func enter(_sender: UIButton){
+        if(searchBar.text?.trimmingCharacters(in: .whitespaces).isEmpty == true){
+            return;
+        }
+        else{
+            var songString = searchBar.text?.trimmingCharacters(in: .whitespacesAndNewlines);
+            songString = songString?.replacingOccurrences(of: " ", with: "%20");
+            let url = URL(string: "https://musescore.com/sheetmusic?text=" + songString!);
+            let sfWindow = SFSafariViewController(url: url!);
+            present(sfWindow, animated: true);
+            searchBar.text = "";
+        }
     }
 }
 
