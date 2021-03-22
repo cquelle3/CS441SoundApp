@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var happyBdayButton: UIButton!
     @IBOutlet var jingleBellButton: UIButton!
+    @IBOutlet var maryHadALittleLambButton: UIButton!
     @IBOutlet var freeStyleButton: UIButton!
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var enterButton: UIButton!
@@ -47,6 +48,8 @@ class ViewController: UIViewController {
     var happyBday:[String] = ["c3", "c3", "d3", "c3", "f3", "e3", "c3", "c3", "d3", "c3", "g3", "f3", "c3", "c3", "c4", "a4", "f3", "e3", "d3", "a4#", "a4#", "a4", "f3", "g3", "f3"];
     
     var jingleBells:[String] = ["e3", "e3", "e3", "e3", "e3", "e3", "e3", "g3", "c3", "d3", "e3", "f3", "f3", "f3", "f3", "f3", "e3", "e3", "e3", "e3", "d3", "d3", "e3", "d3", "g3", "e3", "e3", "e3", "e3", "e3", "e3", "e3", "g3", "c3", "d3", "e3", "f3", "f3", "f3", "f3", "f3", "f3", "e3", "e3", "e3", "e3", "g3", "g3", "f3", "d3", "c3", "c3"];
+    
+    var littleLamb:[String] = ["e3", "d3", "c3", "d3", "e3", "e3", "e3", "d3", "d3", "d3", "e3", "g3", "g3", "e3", "d3", "c3", "d3", "e3", "e3", "e3", "e3", "d3", "d3", "e3", "d3", "c3"];
     
     var index = 0;
     var freeStyleCheck = false;
@@ -314,6 +317,7 @@ class ViewController: UIViewController {
         freeStyleCheck = false;
         searchBar.isHidden = true;
         enterButton.isHidden = true;
+        noteLabel.font = noteLabel.font.withSize(50);
     }
     
     @IBAction func happyBirthdayButton(_sender: UIButton){
@@ -326,6 +330,20 @@ class ViewController: UIViewController {
         freeStyleCheck = false;
         searchBar.isHidden = true;
         enterButton.isHidden = true;
+        noteLabel.font = noteLabel.font.withSize(50);
+    }
+    
+    @IBAction func marryHadALittleLambButton(_sender: UIButton){
+        notesArr = littleLamb;
+        index = 0;
+        noteLabel.text = notesArr[index];
+        noteNumLabel.text = "Note \(index + 1)";
+        noteLabel.isHidden = false;
+        noteNumLabel.isHidden = false;
+        freeStyleCheck = false;
+        searchBar.isHidden = true;
+        enterButton.isHidden = true;
+        noteLabel.font = noteLabel.font.withSize(50);
     }
     
     @IBAction func search(_sender: UIButton){
@@ -333,6 +351,7 @@ class ViewController: UIViewController {
         noteNumLabel.isHidden = true;
         happyBdayButton.isHidden = true;
         jingleBellButton.isHidden = true;
+        maryHadALittleLambButton.isHidden = true;
         searchButton.isHidden = true;
         freeStyleButton.isHidden = true;
         freeStyleCheck = true;
@@ -346,6 +365,7 @@ class ViewController: UIViewController {
         enterButton.isHidden = true;
         happyBdayButton.isHidden = false;
         jingleBellButton.isHidden = false;
+        maryHadALittleLambButton.isHidden = false;
         searchButton.isHidden = false;
         freeStyleButton.isHidden = false;
         goBackButton.isHidden = true;

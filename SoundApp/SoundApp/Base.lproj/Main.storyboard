@@ -214,6 +214,14 @@
                                     <action selector="goBackWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7g-TC-5fa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VD-3Y-2la">
+                                <rect key="frame" x="20" y="113" width="159" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mary Had a Little Lamb"/>
+                                <connections>
+                                    <action selector="marryHadALittleLambButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rp0-fJ-4lH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -238,6 +246,7 @@
                         <outlet property="goBackButton" destination="gta-ez-Y1u" id="xHw-i1-fYX"/>
                         <outlet property="happyBdayButton" destination="Nx3-zX-JXA" id="cPh-06-6X5"/>
                         <outlet property="jingleBellButton" destination="ihZ-HT-fFr" id="SQn-5z-ou7"/>
+                        <outlet property="maryHadALittleLambButton" destination="9VD-3Y-2la" id="Bz8-8F-Cmk"/>
                         <outlet property="noteLabel" destination="Z9v-w3-Dya" id="UUa-4c-Wep"/>
                         <outlet property="noteNumLabel" destination="jCx-T5-Ydp" id="hm8-Mx-Nbb"/>
                         <outlet property="searchBar" destination="ElV-nT-Kc6" id="FrZ-6c-PvS"/>
